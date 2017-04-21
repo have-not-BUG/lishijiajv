@@ -78,7 +78,7 @@
             line-height: 28px;
             border-radius: 2px;
             padding-left: 28px;
-            font-size: 14px;
+            font-size: 16px;
             width: 100%;
             color: #888;
             border: solid 1px #fff;
@@ -603,10 +603,10 @@
 
 <div id="search-bar">
     <a class="web-log" href="####"></a>
-    <div class="search-part">
+    <form class="search-part" action="./search.html">
         <span class="search-icon"></span>
-        <input type="search" placeholder="搜索商品">
-    </div>
+        <input type="search" name="wd" class="search-input" placeholder="搜索商品">
+    </form>
 
     <a class="location-name" href="####">北京</a>
 </div>
@@ -1084,7 +1084,7 @@
     });
 </script>
 <script>
-    var clock, goToTop = $(".go-to-top").eq(0);
+    var clock, goToTop = $(".go-to-top").eq(0),searchInput=$(".search-input").eq(0);
 
     $(window).on("scroll", function () {
         var searchBar = $("#search-bar"),
@@ -1144,7 +1144,12 @@
     }
     goToTop.on("click", function () {
         window.scrollTo(0, 0);
-    })
+    });
+//    searchInput.on("focus",function () {
+//        location.href='./search.html'
+//    })
+
+
 
 
 </script>
