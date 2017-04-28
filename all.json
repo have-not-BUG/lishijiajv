@@ -1,0 +1,76 @@
+{
+    "name": "单人床",
+    "sort": "卧室",
+    "title": "单人床 儿童床 实木单层床 小孩睡的床",
+    "descrip": "实木单人床 儿童床",
+    "src": [{
+        "0": "./images/1卧室/单人床1.jpg"
+    }, {
+        "1": "images/1卧室/单人床2.jpg"
+    }],
+    "graphic": [{
+        "0": "./images/1卧室/单人床1.jpg"
+    }, {
+        "1": "images/1卧室/单人床2.jpg"
+    }],
+    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
+    "similarity": []
+}, 
+{
+    "name": "简单单人床",
+    "sort": "卧室",
+    "title": "简单单人床 儿童床 实木单层床 小孩睡的床",
+    "descrip": "实木单人床 儿童床",
+    "src": [{ "0": "./images/1卧室/简单单人床1.jpg" }],
+    "graphic": [{ "0": "./images/1卧室/简单单人床1.jpg" }],
+    "specifications": "160cm（长）*120cm（宽）*45cm（高）",
+    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4")]
+}, 
+{
+    "name": "母子床",
+    "sort": "卧室",
+    "title": "单人床 儿童床 实木单层床 小孩睡的床",
+    "descrip": "实木单人床 儿童床",
+    "src": [{ "0": "./images/1卧室/母子床1.jpg" }, { "1": "images/1卧室/母子床2.jpg" }],
+    "graphic": [{ "0": "./images/1卧室/母子床1.jpg" }, { "1": "images/1卧室/母子床2.jpg" }],
+    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
+    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4"), ObjectId("58fd9ff3ec585a22e50be9e5")]
+}，
+{
+    "name": "豪华大圆桌",
+    "sort": "餐厅",
+    "title": "大圆桌 豪华圆桌 实木餐椅 玻璃转盘",
+    "descrip": "实木单人床 儿童床",
+    "src": [{ "0": "./images/2餐厅/豪华大圆桌1.jpg" }],
+    "graphic": [{ "0": "./images/2餐厅/豪华大圆桌1.jpg" }],
+    "specifications": "1.8m / 2m / 2.2m",
+    "similarity": []
+},
+{
+    "name": "幼儿园床",
+    "sort": "教室",
+    "title": "幼儿园床 上下铺床 学校上下铺床",
+    "descrip": "实木单人床 儿童床",
+    "src": [{ "0": "./images/3教室/幼儿园床1.jpg" }, { "1": "images/3教室/幼儿园床2.jpg" }],
+    "graphic": [{ "0": "./images/3教室/幼儿园床1.jpg" }, { "1": "images/3教室/幼儿园床2.jpg" }],
+    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
+    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4"), ObjectId("58fd9ff3ec585a22e50be9e5")]
+}
+
+
+
+
+
+
+{
+	"id":"007",
+	"嫌疑犯":"张三",
+	"与嫌疑犯相关的人物":[{"id":"008"},{"嫌疑犯":"李四"}]
+},
+
+{
+	"id":"008",
+	"嫌疑犯":"李四",
+	"与嫌疑犯相关的人物":[{"嫌疑犯":"张三"}]
+
+}

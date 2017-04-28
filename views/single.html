@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= singlecontent[0].name %></title>
+</head>
+<body>
+<ul class="show-search-result clearfix">
+
+
+
+    <% for(var i=0; i<singlecontent[0]["src"].length; i++) { %>
+
+        <li>
+            <img src=" <%= singlecontent[0]["src"][i][i] %> "  alt="图片显示区">
+        </li>
+
+
+    <% } %>
+    <p> <%= singlecontent[0].name %> </p>
+
+
+</ul>
+
+
+</body>
+</html>
