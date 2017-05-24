@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mobile');
+// mongoose.connect('mongodb://localhost/mobile');
+mongoose.connect('mongodb://mgusername:mgusername@ds149501.mlab.com:49501/mobile');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, '数据库mongoose连接错误啊！:'));
 db.once('open', function() {

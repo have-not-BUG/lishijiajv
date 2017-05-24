@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "compression": "^1.6.2",
+    "cross-env": "^5.0.0",
     "gulp": "^3.9.1",
     "gulp-nodemon": "^2.2.1",
     "gulp-svg-symbols": "^2.0.2"

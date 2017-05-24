@@ -32,8 +32,8 @@ global.post=require('./data/mongoose');
 //设置缓存
 
 var options={
-    // maxAge: 86400000
-    maxAge: 0
+    maxAge: 86400000
+    // maxAge: 0
 }
 
 
