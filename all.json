@@ -1,76 +1,498 @@
-{
-    "name": "单人床",
-    "sort": "卧室",
-    "title": "单人床 儿童床 实木单层床 小孩睡的床",
-    "descrip": "实木单人床 儿童床",
-    "src": [{
-        "0": "./images/1卧室/单人床1.jpg"
-    }, {
-        "1": "images/1卧室/单人床2.jpg"
-    }],
-    "graphic": [{
-        "0": "./images/1卧室/单人床1.jpg"
-    }, {
-        "1": "images/1卧室/单人床2.jpg"
-    }],
-    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
-    "similarity": []
-}, 
-{
-    "name": "简单单人床",
-    "sort": "卧室",
-    "title": "简单单人床 儿童床 实木单层床 小孩睡的床",
-    "descrip": "实木单人床 儿童床",
-    "src": [{ "0": "./images/1卧室/简单单人床1.jpg" }],
-    "graphic": [{ "0": "./images/1卧室/简单单人床1.jpg" }],
-    "specifications": "160cm（长）*120cm（宽）*45cm（高）",
-    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4")]
-}, 
-{
-    "name": "母子床",
-    "sort": "卧室",
-    "title": "单人床 儿童床 实木单层床 小孩睡的床",
-    "descrip": "实木单人床 儿童床",
-    "src": [{ "0": "./images/1卧室/母子床1.jpg" }, { "1": "images/1卧室/母子床2.jpg" }],
-    "graphic": [{ "0": "./images/1卧室/母子床1.jpg" }, { "1": "images/1卧室/母子床2.jpg" }],
-    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
-    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4"), ObjectId("58fd9ff3ec585a22e50be9e5")]
-}，
-{
+[{
+  "name": "宝宝椅",
+  "sort": "餐厅",
+  "title": "宝宝餐椅 宝宝折叠餐椅 宝宝吃饭椅  橡木宝宝椅",
+  "descrip": "材质为纯橡木，坚固结实；结构可折叠，可省空间；中间有安全带，防止小孩滑落；进餐时可将其放在餐桌边与小孩一同进餐 ",
+  "src": [
+    {
+      "0": "./images/1餐厅/宝宝椅1.jpg"
+    },
+    {
+      "1": "images/1餐厅/宝宝椅2.jpg"
+    }
+  ],
+  "specifications": "略",
+  "similarity": [],
+  "hot": "yes"
+},
+  {
+    "name": "玻璃转盘",
+    "sort": "餐厅",
+    "title": "玻璃转盘  加厚型玻璃转盘 玻璃圆盘",
+    "descrip": "材质为钢化玻璃，厚度有10mm，抗冲击力强 ",
+    "src": [
+      {
+        "0": "./images/1餐厅/玻璃转盘3.jpg"
+      }
+    ],
+    "specifications": "直径:80cm 90cm 100cm 120cm 140cm 160cm 200cm 厚度:10mm（加厚型）/8mm（非加厚型） ",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "弹簧脚折叠桌",
+    "sort": "餐厅",
+    "title": "弹簧脚折叠桌 折叠桌 折叠餐桌 钢木桌",
+    "descrip": "该脚为加厚型，可收起，节约空间；",
+    "src": [
+      {
+        "0": "./images/1餐厅/弹簧脚折叠桌.jpg"
+      },
+      {
+        "1": "images/1餐厅/弹簧脚折叠桌1.jpg"
+      }
+    ],
+    "specifications": "120cm（长）*60cm（宽）*73cm（高）/ 110cm（长）*41cm（宽）*73cm（高）还有固定脚钢木桌（不可折叠）未上传",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
     "name": "豪华大圆桌",
     "sort": "餐厅",
-    "title": "大圆桌 豪华圆桌 实木餐椅 玻璃转盘",
-    "descrip": "实木单人床 儿童床",
-    "src": [{ "0": "./images/2餐厅/豪华大圆桌1.jpg" }],
-    "graphic": [{ "0": "./images/2餐厅/豪华大圆桌1.jpg" }],
-    "specifications": "1.8m / 2m / 2.2m",
-    "similarity": []
-},
-{
-    "name": "幼儿园床",
-    "sort": "教室",
-    "title": "幼儿园床 上下铺床 学校上下铺床",
-    "descrip": "实木单人床 儿童床",
-    "src": [{ "0": "./images/3教室/幼儿园床1.jpg" }, { "1": "images/3教室/幼儿园床2.jpg" }],
-    "graphic": [{ "0": "./images/3教室/幼儿园床1.jpg" }, { "1": "images/3教室/幼儿园床2.jpg" }],
-    "specifications": "180cm（长）*120cm（宽）*50cm（高）",
-    "similarity": [ObjectId("58fd9ff3ec585a22e50be9e4"), ObjectId("58fd9ff3ec585a22e50be9e5")]
-}
+    "title": "豪华大圆桌 豪华圆桌 豪华桌",
+    "descrip": "有电动和非电动两种款式可选",
+    "src": [
+      {
+        "0": "./images/1餐厅/豪华大圆桌1.jpg",
+        "1": "./images/1餐厅/豪华桌.jpg"
+      }
+    ],
+    "specifications": "直径1.8m，2m,2.2m,2.4m,....等 可按要求定做",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木餐椅",
+    "sort": "餐厅",
+    "title": "实木餐椅 餐椅",
+    "descrip": "同时采用榫头及木胶两种方式固定",
+    "src": [
+      {
+        "0": "./images/1餐厅/实木餐椅.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木折叠桌",
+    "sort": "餐厅",
+    "title": "实木折叠桌",
+    "descrip": "可轻松折叠，节约空间",
+    "src": [
+      {
+        "0": "./images/1餐厅/实木折叠桌.jpg"
+      }
+    ],
+    "specifications": " 长*宽：60*60cm,70*70cm,80*80cm",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "海帆塑料凳",
+    "sort": "餐厅",
+    "title": "海帆塑料凳 塑料椅 塑料椅子",
+    "descrip": "采用柔性加强型塑料原材料，抗摔及承重能力强",
+    "src": [
+      {
+        "0": "./images/1餐厅/海帆塑料凳.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "钢化玻璃板碗橱柜",
+    "sort": "厨房",
+    "title": "钢化玻璃板碗橱柜",
+    "descrip": "采用钢化玻璃，不发霉不变形易清洗",
+    "src": [
+      {
+        "0": "./images/1厨房/钢化玻璃板碗橱柜.jpg"
+      }
+    ],
+    "specifications": "宽 ：60cm，70cm，80cm 高:2层，3层",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木砧板",
+    "sort": "厨房",
+    "title": "实木砧板",
+    "descrip": "经久耐用",
+    "src": [
+      {
+        "0": "./images/1厨房/砧板.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "no"
+  },
+  {
+    "name": "橡木小圆凳",
+    "sort": "儿童房",
+    "title": "橡木小圆凳 圆凳 橡木圆凳",
+    "descrip": "双横更加牢固耐用",
+    "src": [
+      {
+        "0": "./images/1儿童房/橡木小圆凳.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "学生可升降书桌椅套件",
+    "sort": "儿童房",
+    "title": "学生可升降书桌椅套件 学生书桌 写字桌",
+    "descrip": "可升降 根据孩子不同升高进行调整",
+    "src": [
+      {
+        "0": "./images/1儿童房/学生可升降书桌椅套件.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "可折叠晾衣架",
+    "sort": "户外阳台",
+    "title": "可折叠晾衣架 可折叠晒衣架",
+    "descrip": "可折叠  可晒棉絮等 使用方便",
+    "src": [
+      {
+        "0": "./images/1户外阳台/可折叠晾衣架3.jpg"
+      }
+    ],
+    "specifications": "长: 1.5m / 2m / 2.2m",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木单梯",
+    "sort": "户外阳台",
+    "title": "实木单梯 梯子 竹梯 工程梯 家用梯",
+    "descrip": "采用干原材料制作 不会变形及开裂 质量不重",
+    "src": [
+      {
+        "0": "./images/1户外阳台/实木单梯1.jpg"
+      }
+    ],
+    "specifications": "有实木、铝合金及竹子等材质选择。长: 2m/2.5m/3m/3.5m/4m/4.5m/5m/5.5m/6m/.... 可按需购买  ",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "藤桌椅",
+    "sort": "户外阳台",
+    "title": "藤桌椅 藤桌 藤椅 ",
+    "descrip": "承重性强 防霉抗污 高强度钢化玻璃",
+    "src": [
+      {
+        "0": "./images/1户外阳台/藤桌椅1.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "鞋架",
+    "sort": "客厅",
+    "title": "楠竹鞋架 不锈钢鞋架 可折叠鞋架 鞋架子",
+    "descrip": "高温碳化更耐用",
+    "src": [
+      {
+        "0": "./images/1客厅/鞋架1.jpg",
+        "1": "./images/1客厅/有靴子位板面竹鞋架.jpg"
+      }
+    ],
+    "specifications": "有四层 、五层/镂空式、平板式/楠竹、不锈钢/可折叠、不可折叠等各种款式",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "可收缩不锈钢梯子",
+    "sort": "居家日用",
+    "title": "可收缩不锈钢梯子 铝合金人字梯 实木人字梯 工程梯 家用梯 ",
+    "descrip": "高强度加固连接件 安全",
+    "src": [
+      {
+        "0": "./images/1居家日用/可收缩不锈钢梯子.jpg"
+      }
+    ],
+    "specifications": " 有人字/可收缩式 及不锈钢 铝合金 及实木等材质可选; 高:1.5m/2m/2.5m/3m/3.5/... 可定制",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "扫把",
+    "sort": "居家日用",
+    "title": "扫把",
+    "descrip": "扫把",
+    "src": [
+      {
+        "0": "./images/1居家日用/扫把.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "no"
+  },
+  {
+    "name": "塑料收纳箱",
+    "sort": "居家日用",
+    "title": "塑料收纳箱 塑料箱子",
+    "descrip": "材质耐摔 承重性强 底部有轮子可轻松移动",
+    "src": [
+      {
+        "0": "./images/1居家日用/塑料收纳箱.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "no"
+  },
+  {
+    "name": "吸水拖把",
+    "sort": "居家日用",
+    "title": "吸水拖把 拖把",
+    "descrip": "吸水能力强",
+    "src": [
+      {
+        "0": "./images/1居家日用/吸水拖把.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "no"
+  },
+  {
+    "name": "可折叠竹摇椅",
+    "sort": "客厅",
+    "title": "可折叠竹摇椅 可折叠摇椅",
+    "descrip": "可折叠且靠背可根据需要调整垂直角度 夏季必备神器",
+    "src": [
+      {
+        "0": "./images/1客厅/可折叠竹摇椅1.jpg",
+        "1": "./images/1客厅/可折叠竹摇椅2.jpg",
+        "2": "./images/1客厅/可折叠竹摇椅3.jpg"
+      }
+    ],
+    "specifications": "有竹制及木质，可根据需求选择",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木本色茶几",
+    "sort": "客厅",
+    "title": "实木本色茶几",
+    "descrip": "橡木原材料，坚硬结实",
+    "src": [
+      {
+        "0": "./images/1客厅/实木本色茶几.jpg"
+      }
+    ],
+    "specifications": "其他颜色及款式均可定制",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "电脑桌",
+    "sort": "书房",
+    "title": "电脑桌 书桌",
+    "descrip": "结构牢固 表面耐刮",
+    "src": [
+      {
+        "0": "./images/1书房/电脑桌.jpg"
+      }
+    ],
+    "specifications": "其他颜色及款式均可定制",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "可折叠便椅",
+    "sort": "卫生间",
+    "title": "可折叠便椅 老人用厕椅 孕妇用厕椅 医用厕椅",
+    "descrip": "结构结实 可折叠 ",
+    "src": [
+      {
+        "0": "./images/1卫生间/可折叠便椅1.jpg",
+        "1": "./images/1卫生间/可折叠便椅2.jpg",
+        "2": "./images/1卫生间/可折叠便椅3.jpg"
+      }
+    ],
+    "specifications": "其他款式未上传",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木便椅",
+    "sort": "卫生间",
+    "title": "橡木便椅 实木便椅 老人用便椅 老人用厕椅 孕妇用厕椅 医用厕椅",
+    "descrip": "结构结实 可折叠 ",
+    "src": [
+      {
+        "0": "./images/1卫生间/实木便椅.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "塑料小靠背椅",
+    "sort": "卫生间",
+    "title": "塑料小靠背椅 洗脚用椅 幼儿园小靠背椅 幼儿园椅",
+    "descrip": "脚全是实心的 椅子厚重 坐时不会跑偏",
+    "src": [
+      {
+        "0": "./images/1卫生间/塑料小靠背椅.jpg"
+      }
+    ],
+    "specifications": "塑料/实木",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木可拆卸儿童床",
+    "sort": "卧室",
+    "title": "实木可拆卸儿童床 实木单人床 实木小孩睡的床 实木儿童床",
+    "descrip": "可拆卸且四周有护栏，防止小孩摔下",
+    "src": [
+      {
+        "0": "./images/1卧室/单人床1.jpg",
+        "1": "./images/1卧室/单人床2.jpg"
+      }
+    ],
+    "specifications": "长*宽: 1.6*0.8m / 1.2m*0.6m / 其他可定做",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木儿童床",
+    "sort": "卧室",
+    "title": "实木儿童床 实木单人床 实木小孩睡的床 实木儿童床",
+    "descrip": "四周有护栏，防止小孩摔下",
+    "src": [
+      {
+        "0": "./images/1卧室/简单单人床1.jpg"
+      }
+    ],
+    "specifications": "长*宽: 1.6*0.8m / 1.2m*0.6m / 其他可定做",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "可折叠竹床",
+    "sort": "卧室",
+    "title": "可折叠竹床 折叠床",
+    "descrip": "可方便折叠",
+    "src": [
+      {
+        "0": "./images/1卧室/可折叠竹床1.jpg"
+      }
+    ],
+    "specifications": "材质:竹制或木制 宽:80cm,90cm,100cm,110cm,120cm",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "母子实木床",
+    "sort": "卧室",
+    "title": "母子实木床 母子床 子母床 子母实木床",
+    "descrip": "全实木",
+    "src": [
+      {
+        "0": "./images/1卧室/母子床1.jpg",
+        "1": "./images/1卧室/母子床2.jpg"
+      }
+    ],
+    "specifications": "材质:竹制或木制 宽:80cm,90cm,100cm,110cm,120cm",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "实木摇床",
+    "sort": "卧室",
+    "title": "实木摇床 摇椤 摇篮",
+    "descrip": "可上、下层使用 夏天使用上层 冬天使用下层",
+    "src": [
+      {
+        "0": "./images/1卧室/实木摇床1.jpg"
+      }
+    ],
+    "specifications": "还有很多其他款式未上传",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "衣帽架",
+    "sort": "卧室",
+    "title": "实木衣帽架 衣架 挂衣架 不锈钢衣帽架",
+    "descrip": "底部接触面积大 不会翻倒",
+    "src": [
+      {
+        "0": "./images/1卧室/实木衣帽架1.jpg"
+      }
+    ],
+    "specifications": "还有很多其他款式未上传 比如不锈钢式",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "上下铺床",
+    "sort": "卧室",
+    "title": "铁上下铺床 实木上下铺床 两层床 上下两层床",
+    "descrip": "结构牢固，经久耐用",
+    "src": [
+      {
+        "0": "./images/1卧室/铁上下铺床.jpg"
+      }
+    ],
+    "specifications": "还有很多其他款式未上传，比如木制",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "幼儿园上下铺床",
+    "sort": "卧室",
+    "title": "幼儿园上下铺床 实木上下铺床 两层床 上下两层床",
+    "descrip": "结构牢固，经久耐用",
+    "src": [
+      {
+        "0": "./images/1卧室/幼儿园床1.jpg",
+        "1": "./images/1卧室/幼儿园床2.jpg"
+      }
+    ],
+    "specifications": "略",
+    "similarity": [],
+    "hot": "yes"
+  },
+  {
+    "name": "洗衣板",
+    "sort": "洗衣间",
+    "title": "洗衣板 搓衣板",
+    "descrip": "结构不伤衣服，材质耐用",
+    "src": [
+      {
+        "0": "./images/1洗衣间/洗衣板.jpg"
+      }
+    ],
+    "specifications": "还有其他款式未上传 比如塑料材质",
+    "similarity": [],
+    "hot": "yes"
+  }]
 
 
 
 
 
 
-{
-	"id":"007",
-	"嫌疑犯":"张三",
-	"与嫌疑犯相关的人物":[{"id":"008"},{"嫌疑犯":"李四"}]
-},
 
-{
-	"id":"008",
-	"嫌疑犯":"李四",
-	"与嫌疑犯相关的人物":[{"嫌疑犯":"张三"}]
-
-}

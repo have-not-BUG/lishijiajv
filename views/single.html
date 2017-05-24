@@ -2,25 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><%= singlecontent[0].name %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/114.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title><%= singlecontent[0].name %> 详情</title>
+    <style>
+        html, body, ul, li, div, h4, p, a, i, span {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        .goods-pic {
+            width: 100%;
+            height: auto;
+        }
+
+        .show-search-result li {
+            margin: 5px 0;
+        }
+
+        .show-search-result h4, .show-search-result p {
+            text-align: left;
+            margin: 10px 5px;
+        }
+
+        .show-search-result h4 {
+            color: #cf000e;
+        }
+
+        .show-search-result p {
+            color: #333;
+        }
+        .show-search-result p span {
+            color: #000;
+            font-weight: bolder;
+        }
+
+        a {
+            text-decoration: none;
+            color: #808080;
+        }
+        .show-search-result p a{
+            color: blue;
+            text-decoration: underline;
+            padding-right: 10px;
+
+
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            font-size: 14px;
+            color: #666;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .contact li {
+            /*padding: 6px;*/
+            border-top: solid 1px #d8d8d8;
+            border-left: solid 1px #d8d8d8;
+
+        }
+
+        .contact li a {
+            display: block;
+            margin: auto;
+
+        }
+
+        .contact li:nth-of-type(1), .contact li:nth-of-type(2) {
+            width: 16.66667%;
+
+        }
+
+        .contact li:nth-of-type(1) a, .contact li:nth-of-type(2) a {
+            width: 25px;
+            height: 43px;
+        }
+
+        .contact li:nth-of-type(1) a {
+            background: url("./images/qq.svg") center center no-repeat;
+            background-size: contain;
+        }
+
+        .contact li:nth-of-type(2) a {
+            background: url("./images/手机.svg") center center no-repeat;
+            background-size: contain;
+        }
+
+        .contact li:nth-of-type(3), .contact li:nth-of-type(4) {
+            width: 33.33333%;
+            height: 45px;
+            line-height: 45px;
+
+        }
+
+        .get-location {
+            background-color: #da0000;
+        }
+
+        .get-location a {
+            color: #fff;
+
+        }
+
+        #contact-div-clone {
+            height: 45px;
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="./css/bottomPart.css">
+
 </head>
 <body>
-<ul class="show-search-result clearfix">
-
-
-
-    <% for(var i=0; i<singlecontent[0]["src"].length; i++) { %>
-
+<div id="header">
+    <div class="top-bar">
+        <i class="go-back-icon"></i>
+        <h3 class="search-form"> <%= singlecontent[0].name %> 详情</h3>
+        <i class="menu-icon"></i>
+    </div>
+</div>
+<div class="wrap">
+    <ul class="show-search-result">
+        <% for(var i=0; i < singlecontent[0]["src"].length; i++) { %>
         <li>
-            <img src=" <%= singlecontent[0]["src"][i][i] %> "  alt="图片显示区">
+            <img src=' <%= singlecontent[0]["src"][i][i] %>' alt="图片显示区" class="goods-pic">
         </li>
+        <% } %>
+        <h4> <%= singlecontent[0].title %> </h4>
+        <p> <%= singlecontent[0].descrip %> </p>
+        <p> <span>规格：</span>  <%= singlecontent[0].specifications %> </p>
+        <p> <span>所属分类：</span> <a href="./sortsearch?wd=<%= singlecontent[0].sort %>"><%= singlecontent[0].sort %></a></p>
+         <p> <span>相关推荐：</span>
+             <% if (singlecontent[0]["similarity"][0]){ %>
+             <% for(var i=0; i < singlecontent[0]["similarity"].length; i++) { %>
+             <a href='./single?wd=<%= singlecontent[0]["similarity"][i] %>'> 相关物品<%= i+1 %> </a>
+             <% } %>
+             <% } else { %>
+             抱歉，无相关推荐，您可以进入该物品的所属分类页面看看或者使用搜索功能
+             <% } %>
+         </p>
+    </ul>
+    <div id="footer">
+        <div class="function-keys">
+            <ul>
+                <li>
+                    <a href="./index">返回首页
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="window.scrollTo(0, 0);">返回顶部
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback">反馈
+                    </a>
+                </li>
+                <li>
+                    <a href="./about" class="noborder-right">关于我们
+                    </a>
+                </li>
+            </ul>
 
+        </div>
+        <div class="access-method">
+            <ul>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="client-icon"></i>
+                        <span>客户端</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="####">
+                        <i class="touch-screen-icon"></i>
+                        <span>触屏版</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="pc-icon"></i>
+                        <span>电脑版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-record">
+            <p>庐山市李氏家居</p>
+            <p>ICP备案证书号：赣ICP备16012538号-1</p>
+        </div>
+    </div>
+</div>
+<div id="contact-div">
+    <ul class="contact">
+        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=617758391&site=qq&menu=yes"></a></li>
 
-    <% } %>
-    <p> <%= singlecontent[0].name %> </p>
+        <li><a href="tel:13879266780"></a></li>
+        <li><a href="./contact#weixin">加微信联系</a></li>
+        <li class="get-location"><a href="./contact#location">获取门店地址</a></li>
+    </ul>
+</div>
+<div id="contact-div-clone">
+</div>
+<div class="cover-part">
+    <ul class="clearfix cover-part-ul">
+        <li><a href="/index"><img src="./images/菜单项/首页.png" alt="首页图标">
+            <p>首页</p></a></li>
+        <li><a href="/sort"><img src="./images/菜单项/分类.png" alt="分类图标">
+            <p>分类</p></a></li>
+        <li><a href="/hot"><img src="./images/菜单项/正在热销.png" alt="正在热销图标">
+            <p>正在热销</p></a></li>
+        <li><a href="/contact"><img src="./images/菜单项/联系我们.png" alt="联系我们图标">
+            <p>联系我们</p></a></li>
+    </ul>
+</div>
 
-
-</ul>
+<script src="javascripts/zepto.js"></script>
+<script src="javascripts/topbar.js"></script>
 
 
 </body>

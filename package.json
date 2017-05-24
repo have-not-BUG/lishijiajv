@@ -15,5 +15,12 @@
     "mongoose": "^4.9.5",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "compression": "^1.6.2",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-svg-symbols": "^2.0.2"
   }
 }

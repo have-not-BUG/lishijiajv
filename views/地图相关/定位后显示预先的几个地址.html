@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>批量反地址解析+商圈</title>
+    <style type="text/css">
+        body, html{overflow: hidden; width: 100%;height: auto;margin:0;font-family:"微软雅黑";}
+        #l-map{height:300px;width:100%;}
+        #r-result{width:100%; font-size:14px;line-height:20px;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jYNU39RZ3k37NUz1QduizaYD"></script>
+</head>
+<body>
+<div id="l-map"></div>
+<div id="r-result">
+    <input type="button" value="批量反地址解析+商圈" onclick="bdGEO(0)" />
+    <div id="result"></div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    var map = new BMap.Map("l-map");
+    map.centerAndZoom(new BMap.Point(116.048369, 29.461466), 17);
+    map.enableScrollWheelZoom(true);
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function(r){
+        if(this.getStatus() == BMAP_STATUS_SUCCESS){
+            var mk = new BMap.Marker(r.point);
+            map.addOverlay(mk);
+            map.panTo(r.point);
+            console.log('您的位置：'+r.point.lng+','+r.point.lat);
+            map.centerAndZoom(new BMap.Point(r.point.lng, r.point.lat), 17);
+
+            var index = 0;
+            var myGeo = new BMap.Geocoder();
+            var adds = [
+                new BMap.Point(116.048369, 29.461466),
+                new BMap.Point(116.0453644, 29.4659824),
+                new BMap.Point(116.0476074, 29.4598885),
+                new BMap.Point(116.0490112, 29.4766483)
+            ];
+            for(var i = 0; i<adds.length; i++){
+                var marker = new BMap.Marker(adds[i]);
+                map.addOverlay(marker);
+                marker.setLabel(new BMap.Label("我是商圈:"+(i+1),{offset:new BMap.Size(20,-10)}));
+            }
+            function bdGEO(){
+                var pt = adds[index];
+                geocodeSearch(pt);
+                index++;
+            }
+            function geocodeSearch(pt){
+                if(index < adds.length-1){
+                    setTimeout(bdGEO,400);
+                }
+                myGeo.getLocation(pt, function(rs){
+                    console.log(pt);
+                    var addComp = rs.addressComponents;
+                    document.getElementById("result").innerHTML += index + ". " +adds[index-1].lng + "," + adds[index-1].lat + "："  + "商圈(" + rs.address+ ")  结构化数据(" + addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber + ")<br/><br/>";
+                });
+            }
+            bdGEO(0);
+
+        }
+        else {
+            alert('failed'+this.getStatus());
+        }
+    },{enableHighAccuracy: true});
+    // 百度地图API功能
+
+
+
+
+
+</script>

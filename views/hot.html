@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/114.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="index,follow">
+
+    <title>正在热销品</title>
+    <style>
+        html, body, div, p, ul, li, input, form, h4, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #808080;
+        }
+
+
+
+        .search-form {
+            position: relative;
+            width: calc(100% - 80px);
+        }
+
+        .top-bar input {
+            width: 100%;
+            height: 30px;
+            font-size: 16px;
+            padding-left: 30px;
+            border: 1px solid #C7C7C7;
+            border-radius: 5px;
+
+        }
+
+        .search-icon {
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowQjNBM0REMjJBQzkxMUU1QjA0MEI3MzlCMTYyQUY1RSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowQjNBM0REMzJBQzkxMUU1QjA0MEI3MzlCMTYyQUY1RSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjBCM0EzREQwMkFDOTExRTVCMDQwQjczOUIxNjJBRjVFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjBCM0EzREQxMkFDOTExRTVCMDQwQjczOUIxNjJBRjVFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+74EH+gAAAoFJREFUeNq01m9oTXEcx/Hfvbv+RiyWvxnK7ImEhCjxQBnKA0qS1WLRarPtCfFA/sQDxVC6D5SRJP8TjQcm+fNICWXW8ifbspK/16JwvX/1Obef0z1zdu+533q1s+3c8znn/n7n+/vFksmk6aMGoAIrMReTMQLf0YnHuI1LSJkQFQ/4ewI1eI2r2ISZCvuCNKZjPU6hC3sxLJfAKXiI45iAe6hTwGCMxHCMwwZcxBDswnPM70/gbDzS12c/vAiLcRTt+Omc+x5nsRbTcA2laMXqMIH2yVowBpexAA9MuHqrkAYMxHndaGBgkU4qwRWsCTsJfHUYjQo9h1FBgVv0NbZpXNIm9zqCZo3x/myBdurv0O/b0GvyL3udj6jCJH/gcs3G+7hloqnPOKGH2egPXKHjZhNtndHPCn/gPB3fjTjwJboxR40kE1iq9+uVib7aNGPHuoG2c/zAnwIEehOw2A1MaXALUd51U27gOwxVh4m6bPf6rbHMBD7R8cKIw0rUY1+4PTiu/mnUzqIse72Yc/1MoO2dX9X1yyMKK9KSZlvkaX/gNxzTu3JId5Vv1Wv9vI5n2Zr3QS0xtutszzNsiZp2r1aOrKuFnbardNI+1OYYZrvWBb3sO9HR1wJsH30dfqEJJ9UUwo5ZrdqjtwZuxfj/bTHsd75M24cqbSt2Y0ZAkL14tW62Sd2qXp8r03bjn9BYwDZxNA6g0ukWneqNn9QopmpixDUbb2od7NByd0eh7RrXbuN2cV99wGaNZ6X2pbMw0TknrZe6RUvbU+d/dtu41Alt9UITITZHe2SQtg3F2pv2aEMcVFlDE/2YgbY9vZGw5Q+9ETeFLy/U9uyevwIMABMoj4sNrNYJAAAAAElFTkSuQmCC) center center no-repeat;
+            background-size: cover;
+            height: 15px;
+            width: 15px;
+
+            position: absolute;
+            top: 7.5px;
+            left: 10px;
+
+        }
+
+
+        .wrap{
+            width: 100%;
+            min-height: 100vh;
+            max-width: 640px;
+            margin: 0 auto;
+            background: rgb(244, 244, 244);
+            position: relative;
+            border-top: solid 1px #d8d8d8;
+
+
+        }
+
+        .show-search-result {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+            overflow: auto;
+
+        }
+
+        .show-search-result li {
+            width: calc(50% - 10px);
+            border: 1px solid #aaa;
+            margin: 5px;
+            background: #fff;
+        }
+
+        .show-search-result a {
+            width: 100%;
+
+        }
+
+        .show-search-result li img {
+            width: 100%;
+            height: auto;
+        }
+
+        .no-search-result {
+            text-align: center;
+            margin: 10px auto;
+            color: #da0000;
+        }
+
+        .goods-name {
+            margin-top: 6px;
+            color: #da0000;
+        }
+
+        .goods-title {
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px 9.5px;
+        }
+
+        .go-to-top {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(000, 000, 000, .6);
+            position: fixed;
+            right: 15px;
+            bottom: 70px;
+            z-index: 999;
+            display: none;
+        }
+
+        .go-to-top i {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAnCAYAAABjYToLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBREE5NTg4MDVFQ0IxMUU2OUNFMUE1NjI4MDhEQjM2QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBREE5NTg4MTVFQ0IxMUU2OUNFMUE1NjI4MDhEQjM2QSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFEQTk1ODdFNUVDQjExRTY5Q0UxQTU2MjgwOERCMzZBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFEQTk1ODdGNUVDQjExRTY5Q0UxQTU2MjgwOERCMzZBIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+oPLWPAAAAPtJREFUeNrs2EsKwjAQBuAZvZY3c+PSRRGsC1/gZbSXEd3oAeJUCOjQ2jz+QoQZ+BdJyfQjtKUtO+fORDSjsurCAnNUYE1aXYGuhgvdsPeOGcxgpcPaHrXkKakkDJG1d2VGJpKT+66thDP7EhoFw42BguDGQmXjYhdMO1AbNT6q8S4Fh0CxmmMEDoEiNU8IXCqqVifRMI87pOIQqD5YFg6B+gVLxiFQQ7AkHAIVAvO4fSguBLUOuCZCYFE4vbBOQMXA+nDVEOyRgIqFdeGuQ7CF5C5ZRj6pY2Eet5LcJHN9HPWV9NmE7dXaYAYzmMEMZrD/gfn/uA0K9hJgAOmLzZsxQbh/AAAAAElFTkSuQmCC) center center no-repeat;
+            background-size: cover;
+        }
+
+        input[type="search"] {
+            -webkit-appearance: none;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+    </style>
+    <link rel="stylesheet" href="./css/bottomPart.css">
+</head>
+<body>
+<div class="top-bar">
+    <i class="go-back-icon"></i>
+    <form action="./search" method="get" class="search-form">
+        <i class="search-icon"></i>
+        <input type="search" class="search-goods" placeholder="回车或确认键即可搜索" name="wd" value="<%= title1 %>">
+    </form>
+    <i class="menu-icon"></i>
+</div>
+<div class="wrap">
+
+    <ul class="show-search-result">
+        <% if (content1[0]){ %>
+        <% for(var i=0; i < content1.length ; i++) { %>
+
+        <li><a href="./single?wd=<%= content1[i]['_id'] %>">
+            <img src="images/blank.jpg" data-src="<%= content1[i].src[0]['0'] %>" alt="<%= content1[i].name %>">
+            <h4 class="goods-name"><%= content1[i].name %></h4>
+            <p class="goods-title"><%= content1[i].title %></p>
+        </a>
+        </li>
+
+
+        <% } %>
+        <% } else { %>
+        <p class="no-search-result">无相关结果，请更换关键词重试哦</p>
+        <% } %>
+    </ul>
+    <div id="footer">
+        <div class="function-keys">
+            <ul>
+                <li>
+                    <a href="./index">返回首页
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="window.scrollTo(0, 0);">返回顶部
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback">反馈
+                    </a>
+                </li>
+                <li>
+                    <a href="./about" class="noborder-right">关于我们
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="access-method">
+            <ul>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="client-icon"></i>
+                        <span>客户端</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="####">
+                        <i class="touch-screen-icon"></i>
+                        <span>触屏版</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="pc-icon"></i>
+                        <span>电脑版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-record">
+            <p>庐山市李氏家居</p>
+            <p>ICP备案证书号：赣ICP备16012538号-1</p>
+        </div>
+    </div>
+</div>
+<div class="go-to-top">
+    <i></i>
+</div>
+<div class="cover-part">
+    <ul class="clearfix cover-part-ul">
+        <li><a href="/index"><img src="./images/菜单项/首页.png" alt="首页图标">
+            <p>首页</p></a></li>
+        <li><a href="/sort"><img src="./images/菜单项/分类.png" alt="分类图标">
+            <p>分类</p></a></li>
+        <li><a href="/hot"><img src="./images/菜单项/正在热销.png" alt="正在热销图标">
+            <p>正在热销</p></a></li>
+        <li><a href="/contact"><img src="./images/菜单项/联系我们.png" alt="联系我们图标">
+            <p>联系我们</p></a></li>
+    </ul>
+</div>
+
+
+<script src="javascripts/zepto.js"></script>
+<script src="javascripts/topbar.js"></script>
+<script>
+    var goToTop = $(".go-to-top"), clock;
+    $(window).on("scroll", function () {
+        var scrollTop1 = window.pageYOffset,
+            screenHeight = window.screen.height;
+        if (clock) {
+            clearTimeout(clock);
+        }
+        clock = setTimeout(function () {
+            showCheck($(".show-search-result img"));
+            if (scrollTop1 > screenHeight) {
+                goToTop.css("display", "block");
+            } else {
+                goToTop.css("display", "none");
+            }
+        }, 200)
+
+    });
+    function showCheck($imgArry) {
+        $imgArry.each(function () {
+            var $cur = $(this);
+            if ($cur.attr("isLoded")) {
+                return
+            }
+            if (isVisible($cur)) {
+                lode($cur);
+            }
+        });
+        function lode($ele) {
+            $ele.attr("isLoded", true);
+            $ele.attr("src", $ele.attr("data-src"))
+
+        }
+
+        function isVisible($node) {
+            var scrollH = $(window).height() + $(window).scrollTop(),
+                selfDoc = $node.offset().top;
+            if (selfDoc < scrollH) {
+                return true
+            }
+            else {
+                return false
+            }
+        }
+    }
+    showCheck($(".show-search-result img"));
+    goToTop.on("click", function () {
+        window.scrollTo(0, 0);
+    });
+
+</script>
+
+
+</body>
+
+</html>

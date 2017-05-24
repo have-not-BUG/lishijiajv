@@ -2,20 +2,96 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>错误页</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <meta name="robots" content="noindex,nofollow">
+    <title>出错页面</title>
+    <link rel="stylesheet" href="./css/bottomPart.css">
+    <style>
+        .content p{
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
+<div id="header">
+    <div class="top-bar">
+        <i class="go-back-icon"></i>
+        <h3 class="search-form"> 错误页面 </h3>
+        <i class="menu-icon"></i>
+    </div>
+</div>
+<div class="wrap">
+    <div class="content">
+        <p>        抱歉，出现错误了。。。请检查您所进入的网址是否正确，或者点击 <a href="./feedback">这里</a>反馈错误。</p>
+</div>
 
-<div class="content">错误！</div>
-<script>
+</div>
+<div id="footer">
+    <div class="function-keys">
+        <ul>
+            <li>
+                <a href="./index">返回首页
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="window.scrollTo(0, 0);">返回顶部
+                </a>
+            </li>
+            <li>
+                <a href="./feedback">反馈
+                </a>
+            </li>
+            <li>
+                <a href="./about" class="noborder-right">关于我们
+                </a>
+            </li>
+        </ul>
 
-
-
-</script>
+    </div>
+    <div class="access-method">
+        <ul>
+            <li>
+                <a href="./underconstruction">
+                    <i class="client-icon"></i>
+                    <span>客户端</span>
+                </a>
+            </li>
+            <li>
+                <a href="####">
+                    <i class="touch-screen-icon"></i>
+                    <span>触屏版</span>
+                </a>
+            </li>
+            <li>
+                <a href="./underconstruction">
+                    <i class="pc-icon"></i>
+                    <span>电脑版</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="copyright-record">
+        <p>庐山市李氏家居</p>
+        <p>ICP备案证书号：赣ICP备16012538号-1</p>
+    </div>
+</div>
+<div class="cover-part">
+    <ul class="clearfix cover-part-ul">
+        <li><a href="/index"><img src="./images/菜单项/首页.png" alt="首页图标">
+            <p>首页</p></a></li>
+        <li><a href="/sort"><img src="./images/菜单项/分类.png" alt="分类图标">
+            <p>分类</p></a></li>
+        <li><a href="/hot"><img src="./images/菜单项/正在热销.png" alt="正在热销图标">
+            <p>正在热销</p></a></li>
+        <li><a href="/contact"><img src="./images/菜单项/联系我们.png" alt="联系我们图标">
+            <p>联系我们</p></a></li>
+    </ul>
+</div>
+<script src="javascripts/zepto.js"></script>
+<script src="javascripts/topbar.js"></script>
 
 </body>
 

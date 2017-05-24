@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/114.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="index,follow">
+    <title>联系我们</title>
+    <style type="text/css">
+        body, html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        #l-map {
+            height: 300px;
+            width: 100%;
+        }
+
+        #r-result {
+            width: 100%;
+            font-size: 14px;
+            line-height: 20px;
+
+        }
+        #r-result>p{
+            text-align: center;
+            color:#da0000;
+            font-weight: bolder;
+        }
+        /*#r-result h4{*/
+            /*color:#da0000;*/
+            /*font-weight: bolder;*/
+        /*}*/
+        .wrap h3{
+            text-align: center;
+            background-color: rgb(244, 244, 244);
+            padding: 20px 6px;
+            margin: 0;
+        }
+        #concat p,#pay p{
+            font-size: 14px;
+        }
+        #concat img,#pay img{
+            width: 50%;
+            max-width: 640px;
+            height: auto;
+        }
+        /*#concat{*/
+            /*background-color: rgb(244, 244, 244);*/
+        /*}*/
+        .img-ct{
+            text-align: center;
+        }
+        p,h4{
+            margin: 10px 8px;
+
+        }
+        .content-sort-header {
+            text-align: center;
+            height: 44.5px;
+            margin: 0 auto;
+            line-height: 44.5px;
+            position: relative;
+            background-color: rgb(244, 244, 244);
+        }
+
+        .content-sort-centerline{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border-bottom: 1px solid #979797;
+        }
+
+        .content-sort-centerline {
+            width: 14rem;
+        }
+        .content-sort-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 0 8px;
+            transform: translate(-50%, -50%);
+            background-color: rgb(244, 244, 244);
+        }
+
+
+
+    </style>
+    <link rel="stylesheet" href="./css/bottomPart.css">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jYNU39RZ3k37NUz1QduizaYD"></script>
+</head>
+<body>
+<div id="header">
+    <div class="top-bar">
+        <i class="go-back-icon"></i>
+        <h3 class="search-form"> 联系我们 </h3>
+        <i class="menu-icon"></i>
+    </div>
+</div>
+<div class="wrap">
+<div id="location">
+    <div class="content-sort-header">
+        <div class="content-sort-centerline"></div>
+        <div class="content-sort-text"><span>地理位置</span></div>
+    </div>
+<div id="l-map"></div>
+<div id="r-result">
+    <p>注：该标注地图支持缩放、移动功能</p>
+    <hr>
+    <div id="result">
+            <p>a、1号店地址：江西省九江市星子县县人民医院西门向北260米</p>
+            <p>b、2号店地址：江西省九江市星子县新菜场（新山宾隆超市）向南(往鄱阳湖边方向)360米</p>
+    </div>
+    <h4>如需导航可点 <a href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E6%9D%8E%E6%B0%8F%E6%9C%A8%E5%99%A8">此处链接</a> 或在地图软件输入店名即可</h4>
+</div>
+</div>
+<div id="concat">
+    <div class="content-sort-header">
+        <div class="content-sort-centerline"></div>
+        <div class="content-sort-text"><span>联系方式</span></div>
+    </div>
+    <p>1、电话: <a href="tel:13879266780">13879266780 李</a>或<a href="tel:15179218818">15179218818 夏</a> (点击链接可直接拨打对应电话)</p>
+    <p id="weixin">2、微信：13879266780（同手机号)</p>
+    <div class="img-ct"><img src="./images/微信支付宝/微信二维码.jpg" alt="微信二维码"></div>
+    <p>3、QQ： <a href="http://wpa.qq.com/msgrd?v=3&uin=617758391&site=qq&menu=yes">617758391</a>（点击链接可直接会话）</p>
+    <div class="img-ct"><img src="./images/微信支付宝/QQ二维码.jpg" alt="QQ二维码"></div>
+</div>
+<div id="pay">
+    <div class="content-sort-header">
+        <div class="content-sort-centerline"></div>
+        <div class="content-sort-text"><span>支持支付方式</span></div>
+    </div>
+    <p>1、微信支付</p>
+    <div class="img-ct"><img src="./images/微信支付宝/微信支付.jpg" alt="微信支付二维码"></div>
+    <p>2、支付宝支付</p>
+        <div class="img-ct"><img src="./images/微信支付宝/支付宝支付.jpg" alt="支付宝支付二维码"></div>
+</div>
+    <div id="footer">
+        <div class="function-keys">
+            <ul>
+                <li>
+                    <a href="./index">返回首页
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" onclick="window.scrollTo(0, 0);">返回顶部
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback">反馈
+                    </a>
+                </li>
+                <li>
+                    <a href="./about" class="noborder-right">关于我们
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="access-method">
+            <ul>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="client-icon"></i>
+                        <span>客户端</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="####">
+                        <i class="touch-screen-icon"></i>
+                        <span>触屏版</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./underconstruction">
+                        <i class="pc-icon"></i>
+                        <span>电脑版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright-record">
+            <p>庐山市李氏家居</p>
+            <p>ICP备案证书号：赣ICP备16012538号-1</p>
+        </div>
+    </div>
+</div>
+<div class="cover-part">
+    <ul class="clearfix cover-part-ul">
+        <li><a href="/index"><img src="./images/菜单项/首页.png" alt="首页图标">
+            <p>首页</p></a></li>
+        <li><a href="/sort"><img src="./images/菜单项/分类.png" alt="分类图标">
+            <p>分类</p></a></li>
+        <li><a href="/hot"><img src="./images/菜单项/正在热销.png" alt="正在热销图标">
+            <p>正在热销</p></a></li>
+        <li><a href="/contact"><img src="./images/菜单项/联系我们.png" alt="联系我们图标">
+            <p>联系我们</p></a></li>
+    </ul>
+</div>
+<script src="javascripts/zepto.js"></script>
+<script src="javascripts/topbar.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("l-map");
+    map.centerAndZoom(new BMap.Point(116.044369, 29.461566), 15);
+    map.enableScrollWheelZoom(true);
+    var adds = [
+        new BMap.Point(116.048365,29.461474),
+        new BMap.Point(116.041345,29.462574)
+    ];
+    var weizhangleixing = {
+        0: {"店名": "1号店--李氏木器"},
+        1: {"店名": "2号店--李氏家居"}
+    };
+
+    for (var i = 0; i < adds.length; i++) {
+        var marker = new BMap.Marker(adds[i]);
+        map.addOverlay(marker);
+        marker.setLabel(new BMap.Label(weizhangleixing[i]["店名"], {offset: new BMap.Size(20, -10)}));
+    }
+//    function bdGEO() {
+//        var pt = adds[index];
+//        geocodeSearch(pt);
+//        index++;
+//    }
+//    function geocodeSearch(pt) {
+//        if (index < adds.length - 1) {
+//            setTimeout(window.bdGEO, 400);
+//        }
+//        myGeo.getLocation(pt, function (rs) {
+//            var addComp = rs.addressComponents,
+//                zuizhong=nub++;
+//            document.getElementById("result").innerHTML += (zuizhong+1) + ". " + "【地点: 】" + weizhangleixing[zuizhong]["地址"]  +"<br/>"+"  【联系电话:】"+ weizhangleixing[zuizhong]["电话"] +"<br/><br/>";
+//        });
+//    }
+//    bdGEO(0);
+
+
+</script>

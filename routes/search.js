@@ -2,17 +2,17 @@ var express = require('express');
 var router = express.Router();
 
 /* GET search page. */
+
+
 router.get('/search', function(req, res, next) {
     var searchWord=req.query.wd.toString(),
     midWord=searchWord+"+",
-    endWord=new RegExp(midWord);
-    console.log("前!!!",endWord);//查询词
+    endWord=new RegExp(midWord);  
     post.find({"title":endWord},{"similarity":0},function (err,docs) {
         if (err){
             console.log(err);
             return ;
-        }
-        console.log("后!!!!", docs);
+        }        
         res.render('search', { title1: req.query.wd, content1:docs});
     });
 
