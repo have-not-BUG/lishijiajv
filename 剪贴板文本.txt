@@ -1,1 +1,14 @@
+只前端刷新：
 browser-sync start --server --files "*.css, *.html"
+
+前后端都刷新：
+1、gw=cd "c:\mobile" & mongod.exe --dbpath C:\mobile\data
+
+2、 可选 mongo
+
+ 3、gulp server
+
+
+
+
+
