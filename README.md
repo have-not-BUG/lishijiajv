@@ -1,2 +1,8 @@
-# mobileRepos
-my first mobile website
+# 实现功能
+1、将商品分类展示 <br>
+2、支持搜索功能<br>
+3、支持展示庐山市违章高发地地图展示<br>
+
+# 使用技术
+
+
