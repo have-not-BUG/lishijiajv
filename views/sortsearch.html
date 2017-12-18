@@ -10,6 +10,7 @@
     <meta name="robots" content="index,follow">
 
     <title><%= title1 %> 分类的搜索结果</title>
+    <link rel="stylesheet" href="./css/bottomPart.css">
     <style>
         html, body, div, p, ul, li, input, form, h4, a {
             margin: 0;
@@ -58,12 +59,11 @@
 
         .wrap{
             width: 100%;
-            min-height: 100vh;
             max-width: 640px;
             margin: 0 auto;
             background: rgb(244, 244, 244);
-            position: relative;
             border-top: solid 1px #d8d8d8;
+            padding-bottom: 185px;!important;
 
 
         }
@@ -97,9 +97,10 @@
         .no-search-result {
             text-align: center;
             margin: 20px auto;
-            min-height: calc(100vh - 246px);
             color: #da0000;
             font-size: 16px;
+            min-height: calc( 100vh - 287px );
+            box-sizing: border-box;
         }
 
         .goods-name {
@@ -149,7 +150,7 @@
         }
 
     </style>
-    <link rel="stylesheet" href="./css/bottomPart.css">
+
 </head>
 <body>
 <div class="top-bar">

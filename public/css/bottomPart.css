@@ -1,3 +1,12 @@
+body, html {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+html{
+    position: relative;
+
+}
 html,body,ul,li{
     margin: 0;
     padding: 0;
@@ -27,11 +36,13 @@ ul,li{
     background-color: #fff;
     margin: 12px 15px 5px 15px;
 }
+
 .wrap{
     max-width: 640px;
     margin: 0 auto;
-    min-height: 100vh;
+    padding-bottom: 220px;
 }
+
 #header {
     border-bottom: solid 1px #d8d8d8;
     margin-bottom: 10px;
@@ -101,6 +112,12 @@ ul,li{
 }
 
 
+#footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 
 #footer ul,#footer li{
