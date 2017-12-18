@@ -446,8 +446,9 @@
             padding: 0 5px 8px 5px;
         }
 
-        .ct>#footer {
-            position: relative; !important;
+        .ct > #footer {
+            position: relative;
+        !important;
         }
 
         .footer-bar-clone {
@@ -815,7 +816,7 @@
                     <img src="images/loading.gif" data-src="images/1儿童房/橡木小圆凳.jpg" alt="猜你喜欢">
                     <p>橡木小圆凳</p>
                     <h4>双横更加牢固耐用</h4>
-                    <p>已售 <span>202</span></p>
+                    <p>已售 <span>1202</span></p>
                 </a>
             </li>
             <li>
@@ -823,7 +824,7 @@
                     <img src="images/1卧室/实木衣帽架1.jpg" data-src="images/1卧室/实木衣帽架1.jpg" alt="实木衣帽架1">
                     <p>实木衣帽架</p>
                     <h4>底部厚重，稳定性好，不翻倒</h4>
-                    <p>已售 <span>178</span></p>
+                    <p>已售 <span>1718</span></p>
                 </a>
             </li>
             <li>
@@ -831,7 +832,7 @@
                     <img src="images/loading.gif" data-src="images/1客厅/实木本色茶几.jpg" alt="实木本色茶几">
                     <p>实木本色茶几</p>
                     <h4>橡木原材料，坚硬结实</h4>
-                    <p>已售 <span>272</span></p>
+                    <p>已售 <span>2712</span></p>
                 </a>
             </li>
             <li>
@@ -839,7 +840,7 @@
                     <img src="images/loading.gif" data-src="images/1厨房/砧板.jpg" alt="砧板">
                     <p>砧板</p>
                     <h4>枫树材质，经久耐用</h4>
-                    <p>已售 <span>928</span></p>
+                    <p>已售 <span>9128</span></p>
                 </a>
             </li>
             <li>
@@ -847,7 +848,7 @@
                     <img src="images/loading.gif" data-src="images/1洗衣间/洗衣板.jpg" alt="洗衣板">
                     <p>洗衣板</p>
                     <h4>实木洗衣板 不老化</h4>
-                    <p>已售 <span>202</span></p>
+                    <p>已售 <span>2102</span></p>
                 </a>
             </li>
             <li>
@@ -855,7 +856,7 @@
                     <img src="images/loading.gif" data-src="images/1餐厅/实木餐椅.jpg" alt="实木餐椅">
                     <p>实木餐椅</p>
                     <h4>材质坚硬 连接紧凑</h4>
-                    <p>已售 <span>928</span></p>
+                    <p>已售 <span>9128</span></p>
                 </a>
             </li>
 
@@ -998,17 +999,18 @@
     function showCheck($imgArry) {
         $imgArry.each(function () {
             var $cur = $(this);
-            if ($cur.attr("isLoded")) {
+            if ($cur.attr("isLoaded")) {
                 return
             }
             if (isVisible($cur)) {
-                lode($cur);
+                load($cur);
             }
         });
 
-        function lode($ele) {
-            $ele.attr("isLoded", true);
-            $ele.attr("src", $ele.attr("data-src"))
+        function load($ele) {
+            $ele.attr("isLoaded", true);
+            $ele.attr("src", $ele.attr("data-src"));
+//            $ele.width('95%');
 
         }
 
